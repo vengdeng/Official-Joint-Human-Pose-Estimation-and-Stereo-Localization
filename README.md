@@ -1,4 +1,4 @@
-# Joint-Human-Pose-Estimation-and-Stereo-Localization
+# [Offical] Joint-Human-Pose-Estimation-and-Stereo-Localization
 This is Wenlong's master thesis at VITA Lab EPFL
 
 # Install
