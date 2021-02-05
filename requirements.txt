@@ -1,0 +1,2 @@
+pysparkling
+python-json-logger
