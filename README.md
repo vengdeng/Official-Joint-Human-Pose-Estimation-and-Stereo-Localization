@@ -1,5 +1,5 @@
 # Joint-Human-Pose-Estimation-and-Stereo-Localization
-This is Wenlong's master thesis at VITA Lab EPFL and the code is build upon openpsf
+This is Wenlong's master thesis at VITA Lab EPFL
 
 # Install
 Python 3 is required and you need to clone this repository and then:
