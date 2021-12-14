@@ -1,5 +1,9 @@
 # [Offical] Joint-Human-Pose-Estimation-and-Stereo-Localization
-This is Wenlong's master thesis at VITA Lab EPFL
+This is Wenlong's master thesis at VITA Lab EPFL, in this work, we are interested in perceiving humans — a fundamental and critical category for any autonomous vehicle operating alongside pedestrians (from social robots to self-driving cars). Note that our definition of human generalizes to pedestrians and any other category involving humans in the publicly available KITTI dataset, such as person sitting.
+
+<p align="center">
+  <img src=ezgif.com-gif-maker.gif />
+</p>
 
 # Install
 Python 3 is required and you need to clone this repository and then:
@@ -13,7 +17,8 @@ python setup.py install
 ```
 Please notice the correlation module requires GPU, so Mac could not run the model successfully.
 ### Jupyter Example
-We give an example in our example.ipynb to illustrate the usage of our model with kitti dataset. **if you want use your own dataset**, you can fintune the hyperparameter in association_pair.py (ie the depth calculation ratio k and confidence threshold score) file to better match your dataset(**no need to retrain**).  
+We give an example in our [example](https://github.com/vengdeng/Official-Joint-Human-Pose-Estimation-and-Stereo-Localization/blob/master/example.ipynb)
+to illustrate the usage of our model with kitti dataset. **there is no need to retrain if you want use your own dataset**, you can fintune the hyperparameter in association_pair.py (ie [the camera parameter ratio k](https://github.com/vengdeng/Official-Joint-Human-Pose-Estimation-and-Stereo-Localization/blob/master/openpsf/decoder/association_pair.py#L164) and [confidence threshold score](https://github.com/vengdeng/Official-Joint-Human-Pose-Estimation-and-Stereo-Localization/blob/master/openpsf/decoder/association_pair.py#L8)) to better match your dataset.  
 ### Stereo Training 
 We load pretrained pifpaf weights for the 2d pose detection. Please download pretrained weights from[pifpaf](https://github.com/vita-epfl/openpsf).   
 Please keep the folder openpsf's name unchanged, since the pretrained pifpaf model will assign weight according to the folder name.
